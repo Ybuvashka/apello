@@ -12,9 +12,6 @@ export const Wrapper = styled.header`
       justify-content: center;
       align-items: center;
       font-size: 13px;
-      .header__nav-item{
-        
-      }
       .header__nav-item:not(:last-child) {
         margin-right: 52px;
       }
@@ -30,16 +27,28 @@ export const Wrapper = styled.header`
       color: white;
       font-size: 24px;
       cursor: pointer;
-      position: absolute;
       right: 5px;
     }
+
     @media screen and (max-width: 768px) {
-      .header__nav {
-        
-        
+      flex-direction: column;
+      align-items: flex-start;
+
+      .header__mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menuToggleBtn {
+          display: block;
+        }
       }
-      .menuToggleBtn {
-        display: block;
+      .header__nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
       }
     }
   }
