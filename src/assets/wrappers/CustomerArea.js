@@ -10,9 +10,11 @@ export const Wrapper = styled.div`
 
   .customer-area__title {
     margin-bottom: 35px;
+    text-align: center;
   }
   .customer-area__subtitle {
     margin-bottom: 85px;
+    text-align: center;
   }
   .customer-area__menu {
     display: flex;
@@ -40,5 +42,21 @@ export const Wrapper = styled.div`
 
   .customer-area__button {
     color: var(--white);
+  }
+
+  @media screen and (max-width: 768px){
+    .customer-area__menu {
+      gap: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      & button{
+        padding: 15px 10px;
+      }
+    }
+    .customer-area__list {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
   }
 `;

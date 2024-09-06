@@ -1,9 +1,11 @@
 import { Wrapper } from "../assets/wrappers/Opportunities";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
+
 import { Box, Typography, Paper } from "@mui/material";
 // Імпортуємо стилі для Swiper
-import "swiper/css/navigation";
+
 import { Autoplay, Navigation } from "swiper/modules";
 
 const opportunities = [
@@ -28,8 +30,7 @@ const styles = {
   swiperSlide: {
     display: "inline-block",
     padding: "0 10px",
-    minWidth: "auto", // Використовуйте autoWidth для автоматичної ширини
-    maxWidth: "auto",
+    width: 'max-content',
     whiteSpace: "nowrap", // Запобігає переносу тексту
     border: "none", // Прибирає бордер
     boxSizing: "border-box",
@@ -52,7 +53,7 @@ const Opportinities = () => {
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={20} // Відступи між слайдами
-          slidesPerView={5} // Кількість слайдів на екрані
+          slidesPerView={'auto'} // Кількість слайдів на екрані
           autoplay={{ delay: 3000 }} // Автоплей
           navigation // Стрілки навігації
           loop={true}

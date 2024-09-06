@@ -19,7 +19,17 @@ export const Wrapper = styled.div`
     }
     .assesstments__list {
       display: flex;
-      gap: 0 30px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .assesstments__content {
+      margin: 0;
+      text-align: center;
+      .assesstments__list{
+        justify-content: center;
+      }
     }
   }
 `;

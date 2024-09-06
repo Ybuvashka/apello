@@ -34,4 +34,28 @@ export const Wrapper = styled.div`
       color: var(--gray);
     }
   }
+  @media screen and (max-width: 1024px) {
+    .suggestions__list {
+      grid-template-columns: auto auto;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    .suggestions__text {
+      display: block;
+      text-align: center;
+      margin-right: 0px;
+      width: 100%;
+      padding: 0 0 20px 0;
+      border-right: none;
+      border-bottom: 1px solid var(--br-gray);
+    }
+    .suggestions__list {
+      margin-top: 20px;
+      grid-template-columns: auto auto ;
+      text-align: center;
+    }
+  }
+  
 `;

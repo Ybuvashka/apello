@@ -15,6 +15,7 @@ const Callback = () => {
           label="Required sevice"
           variant="outlined"
           sx={{ mb: "20px" }}
+          type="text"
         />
         <TextField
           required
@@ -24,6 +25,7 @@ const Callback = () => {
           multiline
           rows={4}
           sx={{ mb: "40px" }}
+          type="text"
         />
         <button className="callback__button">Send request</button>
       </div>

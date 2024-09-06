@@ -16,10 +16,12 @@ export const Wrapper = styled.div`
     .footer__data {
       margin: 150px 0;
       display: flex;
-      gap: 0 60px;
+      gap: 50px;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
       .footer__list {
-        width: 320px;
+        width: 300px;
         .footer__item-h {
           margin-bottom: 20px;
         }
@@ -39,7 +41,20 @@ export const Wrapper = styled.div`
       .footer__links {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
       }
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .footer__data {
+      justify-content: center !important;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .footer__down{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
   }
 `;

@@ -47,14 +47,14 @@ button {
   padding: 15px 37px;
   border: none;
   font-size: 15px;
+  &:hover{
+    cursor: pointer;
+    background-color: #087be0;
+    transition: all 0.3s ease-out;
+  }
   
 }
 
-button:hover{
-  cursor: pointer;
-  background-color: #087be0;
-  transition: all 0.3s ease-out;
-}
 
 h2 {
   font-size: 42px;

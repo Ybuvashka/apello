@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   color: #000;
   text-align: center;
+  background-color: var(--white);
+  margin-bottom: 160px;
   .resources__header {
     margin-bottom: 35px;
   }
@@ -15,6 +17,15 @@ export const Wrapper = styled.div`
   }
   .resources__list {
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
+  @media screen and (max-width: 1280px) {
+    .resources__list {
+      justify-content: center;
+    }
+  }
+
+  
 `;
